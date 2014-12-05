@@ -13,19 +13,23 @@
                     "element": {"#": "main"}
                 }
             },
-
-            "montageVersion": {
-                "prototype": "ui/version.reel",
+			"chatList": {
+				"prototype": "ui/chat-list.reel",
                 "properties": {
-                    "element": {"#": "montageVersion"}
-                }
+                    "element": {"#": "chatList"}
+                },
+				"bindings": {
+					"data": { "<-": "@owner.chatListData" }
+				}
             }
+
+
         }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <div data-montage-id="montageVersion"></div>
+		<div data-montage-id="chatList"></div>
     </div>
 </body>
 </html>
