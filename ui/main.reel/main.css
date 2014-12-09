@@ -1,7 +1,31 @@
-.Main {}
+.Main {
+height:500px;
+}
+.Main .RoomList 
+{
+	position:absolute;
+	width:180px;
+
+}
+.Main .middle-area
+{
+margin-left:180px;
+margin-right:180px;
+}
 .Main .ChatList {
-max-height: 500px;
-overflow: auto;
-max-width: 500px;
-margin:30px auto;
+margin-top:10px;
+border-left: 2px solid;
+border-right: 2px solid;
+border-color:#efefef;
+}
+.Main .PostMessage {
+	margin-top:10px;
+}
+.Main .UserList 
+{
+	position: absolute;
+	width: 180px;
+	top: 42px;
+	right: 0px;
+
 }

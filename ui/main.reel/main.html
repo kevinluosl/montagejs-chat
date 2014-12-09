@@ -13,6 +13,18 @@
                     "element": {"#": "main"}
                 }
             },
+			"header": {
+				"prototype": "ui/header.reel",
+                "properties": {
+                    "element": {"#": "header"}
+                }
+            },
+			"roomList": {
+				"prototype": "ui/room-list.reel",
+                "properties": {
+                    "element": {"#": "roomList"}
+                }
+            },
 			"chatList": {
 				"prototype": "ui/chat-list.reel",
                 "properties": {
@@ -21,15 +33,36 @@
 				"bindings": {
 					"data": { "<-": "@owner.chatListData" }
 				}
+            },
+			"postMessage": {
+				"prototype": "ui/post-message.reel",
+                "properties": {
+                    "element": {"#": "postMessage"}
+                }
+            },
+			"userList": {
+				"prototype": "ui/user-list.reel",
+                "properties": {
+                    "element": {"#": "userList"}
+                }
             }
-
-
         }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-		<div data-montage-id="chatList"></div>
+		<div data-montage-id="header"></div>
+		<div>
+			<div data-montage-id="roomList"></div>
+			<div class="middle-area">
+				<div data-montage-id="postMessage"></div>
+				<div data-montage-id="chatList"></div>
+				
+			</div>
+			<div data-montage-id="userList"></div>
+		</div>
+		
+		
     </div>
 </body>
 </html>

@@ -17,7 +17,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 				"user_name":"Tom",
 				"user_avatar": "/assets/avatar/p1.jpg",
 				"post_time":"1minutes",
-				"message": "Human Resources"
+				"message": "Human Resources<script>alert('a')</script>"
 				},
                 {
 				"user_name":"Peter",

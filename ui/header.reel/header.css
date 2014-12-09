@@ -1,0 +1,33 @@
+.Header {
+background-color:#333333;
+}
+.Header header{
+color: white;
+text-align: center;
+margin: 0px;
+padding: 10px 0px;
+font-weight: bold;
+font-size: 20px;
+}
+.Header  .button-room-list
+{
+	position: absolute;
+	background:url('/assets/list.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:32px;
+	height: 20px;
+	top: 12px;
+	left: 10px;
+}
+.Header  .button-user-list
+{
+	position: absolute;
+	background:url('/assets/users.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:20px;
+	height: 20px;
+	top: 12px;
+	right: 10px;
+}
