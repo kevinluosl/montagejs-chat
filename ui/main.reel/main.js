@@ -95,6 +95,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.chatListData.push(
                 {
                     "user_name":usermessage.author,
+                    "user_avatar": "/assets/avatar/p1.jpg",
                     "post_time":usermessage.time,
                     "message": msg
                 });

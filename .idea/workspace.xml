@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="32865958-2a39-4065-8524-c3ec0469dd97" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/montage/node_modules/htmlparser2/tests/99-benchmark.js" afterPath="$PROJECT_DIR$/node_modules/montage/node_modules/htmlparser2/tests/99-benchmark.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/chat-list.reel/chat-list.html" afterPath="$PROJECT_DIR$/ui/chat-list.reel/chat-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/montage/node_modules/htmlparser2/node_modules/domhandler/index.js" afterPath="$PROJECT_DIR$/node_modules/montage/node_modules/htmlparser2/node_modules/domhandler/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/digit/node_modules/matte/ui/loading.reel/loading-bg.svg" afterPath="$PROJECT_DIR$/node_modules/digit/node_modules/matte/ui/loading.reel/loading-bg.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/main.reel/main.css" afterPath="$PROJECT_DIR$/ui/main.reel/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/main.reel/main.html" afterPath="$PROJECT_DIR$/ui/main.reel/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/main.reel/main.js" afterPath="$PROJECT_DIR$/ui/main.reel/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/post-message.reel/post-message.css" afterPath="$PROJECT_DIR$/ui/post-message.reel/post-message.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/post-message.reel/post-message.html" afterPath="$PROJECT_DIR$/ui/post-message.reel/post-message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/post-message.reel/post-message.js" afterPath="$PROJECT_DIR$/ui/post-message.reel/post-message.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/user-list.reel/user-list.js" afterPath="$PROJECT_DIR$/ui/user-list.reel/user-list.js" />
     </list>
     <ignored path="montagejs-chat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1388" max-vertical-offset="2166">
+            <state vertical-scroll-proportion="0.6869852" vertical-offset="1407" max-vertical-offset="2185">
               <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
               <folding />
             </state>
@@ -98,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="component.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="component.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/montage/ui/component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3321617" vertical-offset="65456" max-vertical-offset="67146">
+            <state vertical-scroll-proportion="-7.56" vertical-offset="65456" max-vertical-offset="67146">
               <caret line="3455" column="51" selection-start-line="3455" selection-start-column="44" selection-end-line="3455" selection-end-column="51" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -712,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1388" max-vertical-offset="2166">
-          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/chat-list-item.reel/chat-list-item.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
@@ -756,11 +740,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/montage/ui/component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321617" vertical-offset="65456" max-vertical-offset="67146">
+        <state vertical-scroll-proportion="-7.56" vertical-offset="65456" max-vertical-offset="67146">
           <caret line="3455" column="51" selection-start-line="3455" selection-start-column="44" selection-end-line="3455" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6869852" vertical-offset="1407" max-vertical-offset="2185">
+          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
