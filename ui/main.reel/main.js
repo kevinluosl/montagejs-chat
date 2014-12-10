@@ -102,6 +102,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
+    handleRoomListChange:{
+        value:function(roomlist){
+            debugger
+        }
+    },
+
     handleSystemMessageIncome:{
         value:function(systemmessage){
         }

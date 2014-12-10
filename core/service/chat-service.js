@@ -44,11 +44,18 @@ exports.ChatService = Montage.specialize({
         }
     },
 
-    _initSocket:{
-        value:function(){
-            this.addPathChangeListener( "exceptionMessage", this._messageHandler, "handleExceptionChange" );
+    connectToRoom:{
+        value:function(room){
+            roomAddr = "http://" + room.host + ":" + room.port;
+            this._initRoom(roomAddr);
+        }
+    },
+
+    _initRoom:{
+        value:function(roomAddr){
             var self = this;
-            this._socket.on('open', function(){
+            this._socket = io.connect(roomAddr);
+            this._socket.on('open', function(roomList){
                 self._isConnected = true;
                 self._socket.emit('userlist');
             });
@@ -72,6 +79,23 @@ exports.ChatService = Montage.specialize({
                     self._messageHandler.handleUserMessageIncome(self.systemMessage);
             });
         }
+    },
+
+    _initSocket:{
+        value:function(){
+            this.addPathChangeListener( "exceptionMessage", this._messageHandler, "handleExceptionChange" );
+            var self = this;
+            this._socket.on('open', function(roomList){
+                self.roomList = roomList;
+                if(self.roomList)
+                    self._messageHandler.handleRoomListChange(self.roomList);
+                self._socket.disconnect();
+            });
+        }
+    },
+
+    roomList:{
+        value:null
     },
 
     userList:{
