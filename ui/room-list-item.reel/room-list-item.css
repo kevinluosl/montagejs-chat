@@ -2,25 +2,25 @@
 	padding:10px;
 	border-bottom: 1px solid;
 	border-bottom-color: #fafafa;
+	min-width:150px;
+	
 }
-.RoomListItem  .avatar
+.RoomListItem  .icon
 {
 	display:inline-block;
-	width:30px;
-	height:30px;
-	border-radius: 15px;
+	width:16px;
+	height:16px;
 	overflow: hidden;
-	-webkit-box-shadow: 3px 3px 3px;
 	vertical-align: middle;
 	
 }
-.RoomListItem  .avatar img
+.RoomListItem  .icon img
 {
-width:150%;
-height:150%;
+width:100%;
+height:100%;
 }
 .RoomListItem  .user-name
 {
 	display:inline-block;
-	padding-left: 10px;
+	padding-left: 5px;
 }

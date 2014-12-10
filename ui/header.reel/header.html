@@ -9,7 +9,33 @@
             "properties": {
                 "element": {"#": "owner"}
             }
-        }
+        },
+		"btnLeft": {
+			"prototype": "digit/ui/button.reel",
+			"properties": {
+				"element": {"#": "btnLeft"},
+				"identifier": "left"
+			},
+			"listeners": [
+				{
+					"type": "action",
+					"listener": {"@": "owner"}
+				}
+			]
+		},
+		"btnRight": {
+			"prototype": "digit/ui/button.reel",
+			"properties": {
+				"element": {"#": "btnRight"},
+				"identifier": "right"
+			},
+			"listeners": [
+				{
+					"type": "action",
+					"listener": {"@": "owner"}
+				}
+			]
+		}
     }
     </script>
 </head>
@@ -18,6 +44,9 @@
 		<div montage-id="btnRoomList" class="button-room-list"></div>
 		<header>Chat Demo</header>
 		<div montage-id="btnUserList" class="button-user-list"></div>
+		
+		<button data-montage-id="btnLeft">Left</button>
+		<button data-montage-id="btnRight">Right</button>
     </div>
 </body>
 </html>

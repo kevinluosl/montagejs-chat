@@ -1,31 +1,108 @@
-.Main {
-height:500px;
+body, html 
+{
+  height: 100%;
+}
+.Main 
+{
+display:-moz-box;
+display:-webkit-box;
+display:box;
+-moz-box-orient:vertical;
+-webkit-box-orient:vertical;
+box-orient:vertical;
+height:100%;
+}
+.Main .main-content
+{
+-moz-box-flex:1;
+-webkit-box-flex:1;
+ box-flex:1;
+  
+display:-moz-box;
+display:-webkit-box;
+display:box;
 }
 .Main .RoomList 
 {
-	position:absolute;
-	width:180px;
+-webkit-animation:RoomListShowKeyFrame 1s;
+width:150px;
 
 }
+.Main .RoomList.hide
+{
+-webkit-animation:RoomListHideKeyFrame 1s;
+width:0px;
+}
+.Main .RoomList.show
+{
+
+}
+@-webkit-keyframes RoomListHideKeyFrame /* Safari and Chrome */
+{
+from {width:150px;}
+to {width:0px;}
+}
+@-webkit-keyframes RoomListShowKeyFrame /* Safari and Chrome */
+{
+from {width:0px;}
+to {width:150px;}
+}
+
+
 .Main .middle-area
 {
-margin-left:180px;
-margin-right:180px;
-}
-.Main .ChatList {
-margin-top:10px;
+-moz-box-flex:1;
+-webkit-box-flex:1;
+box-flex:1;
+  
+display:-moz-box;
+display:-webkit-box;
+display:box;
+
+-moz-box-orient:vertical;
+-webkit-box-orient:vertical;
+box-orient:vertical;
+	
 border-left: 2px solid;
 border-right: 2px solid;
 border-color:#efefef;
+
+background-color:#eeeecc;
 }
-.Main .PostMessage {
-	margin-top:10px;
+.Main .ChatList 
+{
+margin-bottom:10px;
+-moz-box-flex:1;
+-webkit-box-flex:1;
+box-flex:1;
+overflow:auto;
+
+}
+.Main .PostMessage 
+{
+margin:10px;
 }
 .Main .UserList 
 {
-	position: absolute;
-	width: 180px;
-	top: 42px;
-	right: 0px;
 
+width: 160px;
+-webkit-animation:UserListShowKeyFrame 1s;
+top: 42px;
+right: 0px;
+
+}
+.Main .UserList.hide
+{
+-webkit-animation:UserListHideKeyFrame 1s;
+width:0px;
+}
+@-webkit-keyframes UserListHideKeyFrame /* Safari and Chrome */
+{
+from {width:160px;}
+to {width:0px;}
+}
+@-webkit-keyframes UserListShowKeyFrame /* Safari and Chrome */
+{
+from {width:0px;}
+to {width:150px;}
 }

@@ -19,16 +19,12 @@ exports.RoomList = Component.specialize(/** @lends RoomList# */ {
             
             rangeController.content = [
                {
-				"user_name":"Tom",
-				"user_avatar": "/assets/avatar/p1.jpg",
-				"post_time":"1minutes",
-				"message": "Human Resources<script>alert('a')</script>"
+				"room_name":"Room1",
+				"room_icon": "/assets/room.png"
 				},
                 {
-				"user_name":"Peter",
-				"user_avatar": "/assets/avatar/p2.jpg",
-				"post_time":"1minutes",
-				"message": "Software Engineering"
+				"room_name":"Room2",
+				"room_icon": "/assets/room.png"
 				}
             ];
         }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="user-list-item.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            }
+        },
+		"avatarImage": {
+			"prototype": "digit/ui/image.reel",
+			"properties": {
+				"element": {"#": "avatarImage"}
+			},
+			"bindings": {
+				"src": { "<-": "@owner.value.user_avatar" }
+			}
+		},
+		"userName": {
+			"prototype": "montage/ui/text.reel",
+			"properties": {
+				"element": {"#": "userName"}
+			},
+			"bindings": {
+				"value": { "<-": "@owner.value.user_name" }
+			}
+		}
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="UserListItem">
+		<div data-montage-id="avatar" class="avatar">
+			<img data-montage-id="avatarImage">
+		</div>
+		<div  data-montage-id="userName" class="user-name"></div>
+    </div>
+</body>
+</html>

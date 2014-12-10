@@ -42,8 +42,24 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 				"user_avatar": "/assets/avatar/p1.jpg",
 				"post_time":"1minutes",
 				"message": "Information Technology"
+				},
+				 {
+				"user_name":"Tom", 
+				"user_avatar": "/assets/avatar/p1.jpg",
+				"post_time":"1minutes",
+				"message": "Information Technology"
+				}, {
+				"user_name":"Tom", 
+				"user_avatar": "/assets/avatar/p1.jpg",
+				"post_time":"1minutes",
+				"message": "Information Technology"
 				}
             ];
-        }
+        },
+		toggleRoomList:{
+			value:function(){
+			debugger;
+			}
+		}
     }
 });

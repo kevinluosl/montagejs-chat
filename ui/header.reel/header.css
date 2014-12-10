@@ -31,3 +31,18 @@ font-size: 20px;
 	top: 12px;
 	right: 10px;
 }
+
+.Header button
+{
+	position:absolute;
+	opacity:0;
+}
+.Header button:nth-child(4)
+{
+	top:0px;
+}
+.Header button:nth-child(5)
+{
+right:0px;
+top:0px;
+}

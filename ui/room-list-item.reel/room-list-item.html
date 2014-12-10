@@ -10,22 +10,22 @@
                 "element": {"#": "owner"}
             }
         },
-		"avatarImage": {
+		"iconImage": {
 			"prototype": "digit/ui/image.reel",
 			"properties": {
-				"element": {"#": "avatarImage"}
+				"element": {"#": "iconImage"}
 			},
 			"bindings": {
-				"src": { "<-": "@owner.value.user_avatar" }
+				"src": { "<-": "@owner.value.room_icon" }
 			}
 		},
-		"userName": {
+		"roomName": {
 			"prototype": "montage/ui/text.reel",
 			"properties": {
-				"element": {"#": "userName"}
+				"element": {"#": "roomName"}
 			},
 			"bindings": {
-				"value": { "<-": "@owner.value.user_name" }
+				"value": { "<-": "@owner.value.room_name" }
 			}
 		}
     }
@@ -33,10 +33,10 @@
 </head>
 <body>
     <div data-montage-id="owner" class="RoomListItem">
-		<div data-montage-id="avatar" class="avatar">
-			<img data-montage-id="avatarImage">
+		<div data-montage-id="roomIcon" class="icon">
+			<img data-montage-id="iconImage">
 		</div>
-		<div  data-montage-id="userName" class="user-name"></div>
+		<div  data-montage-id="roomName" class="user-name"></div>
     </div>
 </body>
 </html>
