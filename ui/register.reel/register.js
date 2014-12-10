@@ -1,21 +1,23 @@
 /**
- * @module ui/post-message.reel
+ * @module ui/register.reel
  */
 var Component = require("montage/ui/component").Component;
 
 /**
- * @class PostMessage
+ * @class Register
  * @extends Component
  */
-exports.PostMessage = Component.specialize(/** @lends PostMessage# */ {
+exports.Register = Component.specialize(/** @lends Register# */ {
     constructor: {
-        value: function PostMessage() {
+        value: function Register() {
             this.super();
         }
     },
     handleAction: {
         value: function() {
-            var ms = this.templateObjects.message.value;
+           this.element.remove();
+            this.parentComponent.templateObjects.postMessage.element.style.display = "-webkit-box";
+            var ms = this.templateObjects.userName.value;
             this.parentComponent.chatService.sendMessage(ms);
             console.log("Fallback action handler invoked as there is no specific handler for this button");
         }

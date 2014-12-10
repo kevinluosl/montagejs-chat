@@ -2,7 +2,7 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="post-message.css">
+    <link rel="stylesheet" type="text/css" href="register.css">
     <script type="text/montage-serialization">
     {
         "owner": {
@@ -10,10 +10,10 @@
                 "element": {"#": "owner"}
             }
         },
-		"message": {
+        "userName": {
 				"prototype": "/digit/ui/text-area.reel",
                 "properties": {
-                    "element": {"#": "message"}
+                    "element": {"#": "userName"}
                 }
         },
 		"btnSend": {
@@ -32,12 +32,13 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="owner" class="PostMessage">
-		<div>
-			<div data-montage-id="message"></div>
-		</div>
-		
-		<div data-montage-id="btnSend">Send</div>
+    <div data-montage-id="owner" class="Register">
+        <p>Please specify your name.</p>
+        <div>
+            <div data-montage-id="userName"></div>
+        </div>
+
+        <div data-montage-id="btnSend">Submit</div>
     </div>
 </body>
 </html>

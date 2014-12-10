@@ -78,9 +78,9 @@ box-flex:1;
 overflow:auto;
 
 }
-.Main .PostMessage 
+.Main .PostMessage
 {
-margin:10px;
+    display:none;
 }
 .Main .UserList 
 {
